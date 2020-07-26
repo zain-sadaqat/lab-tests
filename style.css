@@ -300,6 +300,75 @@ li, a {
 	}
 
 
+	.what-is-covid-19 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.left-side {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 25px;
+		flex: 1;
+		padding: 10px 5px;
+		/*width: 100%;*/
+		/*height: 100%;*/
+	}
+
+	.left-side img {
+		width: 200px;
+		height: 300px;
+	}
+
+
+	.right-side {
+		display: flex;
+		flex-flow: wrap column;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		
+		color: var(--heading-color);
+		font-weight: bolder;
+		font-size: 1em;
+		padding: 5px 15px;
+		/*width: 100%;*/
+		background: yellow;
+		text-align: center;
+	}
+
+	.what-is-covid-19 .right-side h1 {
+		text-align: center;
+		font-size: 1em;
+
+	}
+
+	.what-is-covid-19 .right-side p {
+
+		text-align: center;
+		color: var(--paragraph-color);
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	.what-is-covid-19 .right-side button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		background-color: white;
+		border: 1px solid var(--heading-color);
+		border-radius: 10px;
+		margin-top: 20px;
+	}
+
+	.what-is-covid-19 .right-side button a {
+		color: var(--heading-color);
+	}
+
+
 
 
 }
@@ -426,7 +495,7 @@ li, a {
 
 	.left-side img {
 		width: 250px;
-		height: 300px;
+		height: 250px;
 	}
 
 	.right-side {
