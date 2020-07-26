@@ -1,0 +1,476 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    scrollbar-width: thin;
+    font-family: 'HKGroteskRegular';
+}
+
+:root {
+	--heading-color : #1A75C1;
+	--sub-heading-color: #2BB96C;
+	--paragraph-color: #5F5F5F;
+	--card-color: #FCFCFC;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 10px;
+	background-color: #FBFBFB;
+	box-shadow: 0px 2px 2px #f5f5f5;
+
+}
+
+header > h1 {
+	color: var(--heading-color);
+}
+
+.logo {
+	margin-right: auto;
+} 
+
+.navbar li{
+	display: inline-block;
+	padding: 5px 20px;
+}
+
+li, a {
+    font-weight: medium;
+    font-size: 16px;
+    color: var(--paragraph-color);
+}
+
+.active {
+	background: #2BB96C;
+	border: none;
+	border-radius: 10px;
+}
+
+.active a {
+	color: white;
+}
+
+.landingpage {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.landingpage .col-left {
+	flex: 1;
+	margin-top: 60px;
+	color: var(--heading-color);
+	font-weight: bolder;
+	font-size: 2.5em;
+	padding: 10px 40px;
+}
+
+.landingpage .col-left p {
+	margin-top: 30px;
+	width: 70%;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.landingpage .col-right {
+	flex: 2;
+	padding: 10px 5px;
+}
+
+
+/* Marketing Stuff */
+
+
+.marketing-stuff {
+	display: flex;
+	flex-direction: column;
+	background-image: url(img/marketing-stuff-bg.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	padding: 50px;
+}
+
+.marketing-stuff-head {
+	/*width: 100%;*/
+	text-align: center;
+	color: var(--heading-color);
+	font-size: 2em;
+	padding: 20px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+
+}
+
+
+.trend-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--card-color);
+	/*width: 300px;*/
+	height: 400px;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 50px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	width: 25%;
+}
+
+.trend-1:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.trend-1 h2 {
+	color: var(--sub-heading-color);
+	text-align: center;	
+}
+
+.trend-1 img {
+	padding: 20px 0px;
+}
+
+.trend-1 p {
+	color: var(--paragraph-color);
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 75%;
+}
+
+
+/* endof Marketing Stuff section */
+
+
+
+/* What is Covid-19 Section */
+
+.what-is-covid-19 {
+	display: flex;
+	flex-flow: wrap row;
+}
+
+.left-side {
+	margin-top: 40px;
+	flex: 2;
+	padding: 10px 5px;
+	width: 100%;
+	height: 100%;
+}
+
+.right-side {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 50px;
+	color: var(--heading-color);
+	font-weight: bolder;
+	font-size: 1.5em;
+	padding: 10px 40px;
+}
+
+.what-is-covid-19 .right-side h1 {
+	text-align: right;
+	font-size: 2em;
+}
+
+.what-is-covid-19 .right-side p {
+	text-align: right;
+	color: var(--paragraph-color);
+}
+
+.what-is-covid-19 .right-side button {
+	padding: 10px;
+	background-color: white;
+	border: 1px solid var(--heading-color);
+	border-radius: 10px;
+	
+}
+
+.what-is-covid-19 .right-side button a {
+	color: var(--heading-color);
+
+}
+
+
+/* endof Covid-19 Section */
+
+
+
+
+
+
+
+/* Ipad Tablets */
+@media screen and (max-width: 992px) {
+
+	.navbar li {
+	display: inline-block;
+	padding: 5px 5px;
+	}
+
+	.landingpage {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.landingpage .col-left p {
+		width: 100%;
+		padding: 5px;
+
+	}
+
+	.landingpage .col-left h1 {
+		width: 100%;
+		padding: 5px;
+		text-align: center;
+	}
+
+	.landingpage .col-right img {
+		width: 400px;
+		height: 400px;
+	}
+
+
+
+
+
+	.marketing-stuff {
+		padding: 15px;
+	}
+	
+
+	.marketing-stuff-head {
+		/*justify-content: flex-start;*/
+		font-size: 2.2em;
+		/*width: 75%;*/
+	}
+
+	.container {
+		flex-flow: wrap column;	
+		justify-content: center;
+		align-items: center;
+	}
+
+	.trend-1 {
+		justify-content: center;
+		height: 390px;
+		border-radius: 10px;
+		padding: 15px;
+		margin: 40px 0px;
+		width: 40%;
+	}
+
+
+	.trend-1 h2 {
+	color: var(--sub-heading-color);
+	text-align: center;	
+	font-size: 1.7em;
+	padding: 15px;
+	}
+
+	.trend-1 img {
+		padding: 0px;
+	}
+
+	.trend-1 p {
+		color: var(--paragraph-color);
+		text-align: center;
+		padding: 5px;
+		width: 90%;
+	}
+
+
+
+
+}
+
+
+/* endof Landing Page section */
+
+
+
+
+/* Mobile Screen */
+@media screen and (max-width: 600px) {
+	header img {
+		width: 100%;
+	}
+
+	.navbar {
+		margin: 15px 10px;
+	}
+
+	.logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	li, a {
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 5px;
+	}
+
+	.landingpage {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.landingpage .col-left p {
+		width: 100%;
+		padding: 0px;
+		word-break: break-all;
+	}
+
+	.landingpage .col-left h1 {
+		width: 100%;
+	}
+
+	.landingpage .col-right img {
+		width: 320px;
+		height: 250px;
+	}
+
+
+
+
+	.marketing-stuff {
+		padding: 5px;
+	}
+	
+
+	.marketing-stuff-head {
+		/*justify-content: flex-start;*/
+		font-size: 1.5em;
+		/*width: 75%;*/
+	}
+
+	.container {
+		flex-flow: wrap column;	
+		justify-content: center;
+		align-items: center;
+	}
+
+	.trend-1 {
+		justify-content: center;
+		height: 390px;
+		border-radius: 10px;
+		padding: 15px;
+		margin: 40px 0px;
+		width: 70%;
+	}
+
+
+	.trend-1 h2 {
+	color: var(--sub-heading-color);
+	text-align: center;	
+	font-size: 1.5em;
+	padding: 10px;
+	}
+
+	.trend-1 img {
+		padding: 3px;
+	}
+
+	.trend-1 p {
+		color: var(--paragraph-color);
+		text-align: center;
+		padding: 5px;
+		width: 80%;
+	}
+
+
+	.what-is-covid-19 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.left-side {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30px;
+		flex: 1;
+		padding: 10px 5px;
+		/*width: 100%;*/
+		/*height: 100%;*/
+	}
+
+	.left-side img {
+		width: 250px;
+		height: 300px;
+	}
+
+	.right-side {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		margin-top: 35px;
+		color: var(--heading-color);
+		font-weight: bolder;
+		font-size: 1em;
+		padding: 10px 20px;
+		width: 100%;
+	}
+
+	.what-is-covid-19 .right-side h1 {
+		text-align: center;
+		font-size: 1.5em;
+
+	}
+
+	.what-is-covid-19 .right-side p {
+
+		text-align: center;
+		color: var(--paragraph-color);
+		margin-top: 30px;
+		width: 75%;
+	}
+
+	.what-is-covid-19 .right-side button {
+		padding: 10px;
+		background-color: white;
+		border: 1px solid var(--heading-color);
+		border-radius: 10px;
+		margin-top: 30px;
+	}
+
+	.what-is-covid-19 .right-side button a {
+		color: var(--heading-color);
+	}
+
+
+
+
+}
+
